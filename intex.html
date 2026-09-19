@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aathin Store | Premium Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            AATHIN<span>STORE</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#categories">Categories</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="search-btn" id="search-btn"></button>
+                🔍</button>
+            </button></button>
+
+            <button class="cart-btn" id="cart-btn"></button>
+                🛒 <span id="cart-count">0</span></button>
+            </button></button>
+
+        </div>
+
+    </header>
+
+    
+
+<!-- SEARCH BOX -->
+<div class="search-box" id="search-box">
+    <input type="text" id="search-input" placeholder="Search products..." autocomplete="off">
+    <button id="search-close">✕</button>
+</div>
+
+<main>
+
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="hero-small">
+                    NEW COLLECTION 2026
+                </p>
+
+                <h1>
+                    Discover<br>
+                    Something <span>New.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Explore premium products designed
+                    for your everyday lifestyle.
+                </p>
+
+                <a href="#shop" class="hero-btn">
+                    Shop Now →
+                </a>
+
+            </div>
+
+
+            <!-- HERO IMAGE -->
+
+            <div class="hero-image">
+
+                <div class="hero-product">
+
+                    <img
+                        src="11.jpg"
+                        alt="Wireless Headphones">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CATEGORIES
+        ========================== -->
+
+<section class="categories" id="categories">
+
+    <div class="section-title">
+        <p>EXPLORE</p>
+        <h2>Shop by Category</h2>
+    </div>
+
+    <div class="category-grid">
+
+        <div class="category-card">
+            <img src="43.jpg" alt="Electronics">
+            <span>01</span>
+            <h3>Electronics</h3>
+            <p>Smart devices & gadgets</p>
+        </div>
+
+        <div class="category-card">
+            <img src="48.jpg" alt="Fashion">
+            <span>02</span>
+            <h3>Fashion</h3>
+            <p>Modern style & essentials</p>
+        </div>
+
+        <div class="category-card">
+            <img src="16.jpg" alt="Watches">
+            <span>03</span>
+            <h3>Watches</h3>
+            <p>Classic & premium watches</p>
+        </div>
+
+        <div class="category-card">
+            <img src="50.jpg" alt="Accessories">
+            <span>04</span>
+            <h3>Accessories</h3>
+            <p>Complete your style</p>
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- =========================
+             PRODUCTS
+        ========================== -->
+
+        <section class="products" id="shop">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p>
+                        OUR COLLECTION
+                    </p>
+
+                    <h2>
+                        Featured Products
+                    </h2>
+
+                </div>
+
+                <button class="view-all">
+                    View All →
+                </button>
+
+            </div>
+
+
+            <div class="product-grid">
+
+
+                <!-- PRODUCT 1 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="12.jpg"
+                            alt="Wireless Headphones">
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Electronics
+                        </p>
+
+                        <h3>
+                            Wireless Headphones
+                        </h3>
+
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                ₹2,499
+                            </span>
+
+                            <button class="add-cart" onclick="addToCart(this)"></button>
+                                + Add</button>
+                            </button></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 2 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="17.jpg"
+                            alt="Classic Black Watch">
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Watches
+                        </p>
+
+                        <h3>
+                            Classic Black Watch
+                        </h3>
+
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                ₹3,999
+                            </span>
+
+                            <button class="add-cart" onclick="addToCart(this)"></button>
+                                + Add</button>
+                            </button></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 3 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="18.jpg"
+                            alt="Premium Backpack">
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Accessories
+                        </p>
+
+                        <h3>
+                            Premium Backpack
+                        </h3>
+
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                ₹1,899
+                            </span>
+
+                            <button class="add-cart" onclick="addToCart(this)"></button>
+                                + Add</button>
+                            </button></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 4 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="22.jpg"
+                            alt="Minimal Sneakers">
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Fashion
+                        </p>
+
+                        <h3>
+                            Minimal Sneakers
+                        </h3>
+
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                ₹2,799
+                            </span>
+
+                            <button class="add-cart" onclick="addToCart(this)"></button>
+                                + Add</button>
+                            </button></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             OFFER BANNER
+        ========================== -->
+
+        <section class="offer">
+
+            <div>
+
+                <p>
+                    LIMITED OFFER
+                </p>
+
+                <h2>
+                    Upgrade Your<br>
+                    Everyday Style.
+                </h2>
+
+                <a href="#shop">
+                    Explore Collection →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section class="contact" id="contact">
+
+            <p>
+                GET IN TOUCH
+            </p>
+
+            <h2>
+                Have a question?
+            </h2>
+
+            <p>
+                We'd love to hear from you.
+            </p>
+
+            <a href="mailto:hello@aathinstore.com">
+                hello@aathinstore.com
+            </a>
+
+        </section>
+
+        <!-- =========================
+     CART PANEL
+========================== -->
+
+<div class="cart-overlay" id="cart-overlay"></div>
+
+<div class="cart-panel" id="cart-panel">
+
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+
+        <button class="cart-close" id="cart-close">
+            ✕
+        </button>
+    </div>
+
+    <div class="cart-items" id="cart-items">
+
+        <div class="empty-cart">
+            <p>Your cart is empty</p>
+            <span>Add some products to get started.</span>
+        </div>
+
+    </div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+            <span>Total</span>
+            <strong id="cart-total">₹0</strong>
+        </div>
+
+        <button class="checkout-btn">
+            Checkout →
+        </button>
+
+    </div>
+
+</div>
+
+    </main>
+
+    <!-- CART PANEL -->
+<div class="cart-overlay" id="cart-overlay"></div>
+
+<div class="cart-panel" id="cart-panel">
+
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button class="cart-close" id="cart-close">✕</button>
+    </div>
+
+    <div class="cart-items" id="cart-items">
+        <div class="empty-cart">
+            <p>Your cart is empty</p>
+            <span>Add some products to get started.</span>
+        </div>
+    </div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+            <span>Total</span>
+            <strong id="cart-total">₹0</strong>
+        </div>
+
+        <button class="checkout-btn">
+            Checkout →
+        </button>
+
+    </div>
+
+</div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="logo">
+            AATHIN<span>STORE</span>
+        </div>
+
+        <p>
+            © 2026 Aathin Store. All Rights Reserved.
+        </p>
+
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
